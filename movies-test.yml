@@ -1,4 +1,5 @@
-env: test
+env:
+  test
 server:
   port: 8913
 spring:
