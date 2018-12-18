@@ -1,3 +1,5 @@
+name:
+  zhangsan
 env:
   test
 server:
@@ -11,5 +13,4 @@ eureka:
       defaultZone: http://localhost:8911/eureka/
 instance:
   prefer-ip-address: true
-name:
-  zhangsan
+
