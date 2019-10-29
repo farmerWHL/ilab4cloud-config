@@ -1,0 +1,13 @@
+env: dev
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8911/eureka/
+instance:
+  prefer-ip-address: true
+name: liisi
+server:
+  port: 8913
+spring:
+  application:
+    name: movieServer
