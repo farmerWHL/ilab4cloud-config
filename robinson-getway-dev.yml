@@ -1,1 +1,26 @@
+server:
+  port: 8999
+spring:
+  application:
+    name: robinson-getway
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: ROBINSON-CONFIG
+      profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+zuul:
+  routes:
+    robinson-container: /container/**
+    #路由的key可以随便写
+#    container:
+#      path: /container/**
+#      serviceId: robinson-container
 
+management:
+  security:
+    enabled: false
