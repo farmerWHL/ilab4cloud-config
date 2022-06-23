@@ -1,7 +1,7 @@
 # 设置本镜像需要使用的基础镜像
 FROM  java:8  
   
-RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+# RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 #RUN mkdir -p /usr/local/jar/lib
 
