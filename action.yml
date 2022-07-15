@@ -1,0 +1,6 @@
+# action.yml
+name: 'ilab4cloud'
+description: 'github action for ilab4cloud'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
