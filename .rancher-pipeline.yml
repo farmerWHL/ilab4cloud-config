@@ -1,0 +1,18 @@
+stages:
+- name: compile
+  steps:
+  - runScriptConfig:
+      image: maven:3-jdk-7
+      shellScript: maven clean install package -P dev
+- name: build
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./dockerfile
+      buildContext: .
+      tag: ilab_demo:v1
+- name: deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deploy.yaml
+timeout: 60
+notification: {}
