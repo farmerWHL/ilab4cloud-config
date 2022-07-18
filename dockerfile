@@ -3,7 +3,7 @@ FROM java:8
 FROM maven:3-jdk-8
 #FROM bitnami/git
 
-RUN mvn clean install package --settings .
+RUN mvn clean install package --settings ilab4cloud-config
 # 把jar包添加到镜像中
 ADD target/ilab4cloud-config-1.0-SNAPSHOT.jar /usr/local/jar/
 # ADD target/lib /usr/local/jar/lib
