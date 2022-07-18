@@ -1,3 +1,0 @@
-这个是一个关于git status的文件，用于git 测试
-这个是一个关于git status的文件，用于git 测试（2019年3月9日15:18:42）
-gitTest for git pull requests
